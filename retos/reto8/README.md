@@ -1,7 +1,7 @@
-# Reto 8 - Reconexion basica
+# Reto 8 - Reconexión básica
 
-Codigo:
+Código:
 - servidor: server.js
 - cliente: client.js
 
-Implementa reconexion automatica con backoff exponencial y heartbeat ping/pong.
+Implementa reconexión automática con backoff exponencial y heartbeat `ping/pong`.

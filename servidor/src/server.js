@@ -136,7 +136,7 @@ wss.on("connection", (ws) => {
   ws.on("message", (raw) => {
     const payload = parseJSON(raw.toString());
     if (!payload || typeof payload.type !== "string") {
-      send(ws, { type: "error", message: "Mensaje JSON invalido" });
+      send(ws, { type: "error", message: "Mensaje JSON inválido" });
       return;
     }
 

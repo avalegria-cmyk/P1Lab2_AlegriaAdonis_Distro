@@ -1,7 +1,7 @@
-# Reto 1 - Envio de imagenes
+# Reto 1 - Envío de imágenes
 
-Codigo:
+Código:
 - servidor: server.js
 - cliente: client.js
 
-Implementa seleccion y envio de imagenes por WebSocket, con render en tiempo real.
+Implementa selección y envío de imágenes por WebSocket, con renderizado en tiempo real.

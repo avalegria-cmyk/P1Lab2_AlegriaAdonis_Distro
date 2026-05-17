@@ -46,8 +46,10 @@ function handleBoardEvent(common, currentClient, payload) {
       !isValidPoint(d.x1) ||
       !isValidPoint(d.y1)
     ) {
-      return { ok: false, error: "Trazo invalido" };
-    }const event = {
+      return { ok: false, error: "Trazo inválido" };
+    }
+
+    const event = {
       type: "board-draw",
       room: currentClient.room,
       draw: {
@@ -64,7 +66,9 @@ function handleBoardEvent(common, currentClient, payload) {
     common.boardManager.push(currentClient.room, event.draw);
     common.broadcastToRoom(currentClient.room, event);
     return { ok: true };
-  }if (payload.type === "board-clear") {
+  }
+
+  if (payload.type === "board-clear") {
     common.boardManager.clear(currentClient.room);
     common.broadcastToRoom(currentClient.room, {
       type: "board-clear",

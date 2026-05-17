@@ -1,6 +1,6 @@
-# Reto 4 - Notificacion de conexion
+# Reto 4 - Notificación de conexión
 
-Codigo:
+Código:
 - servidor: server.js
 - cliente: client.js
 

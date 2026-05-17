@@ -20,5 +20,5 @@ export function createTypingController(sendFn) {
 }
 
 export function setTypingIndicator(typingIndicatorEl, payload) {
-  typingIndicatorEl.textContent = payload.isTyping ? `${payload.username} esta escribiendo...` : "";
+  typingIndicatorEl.textContent = payload.isTyping ? `${payload.username} está escribiendo...` : "";
 }

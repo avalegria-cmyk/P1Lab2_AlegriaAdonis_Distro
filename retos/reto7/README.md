@@ -1,7 +1,7 @@
 # Reto 7 - Indicador de escritura
 
-Codigo:
+Código:
 - servidor: server.js
 - cliente: client.js
 
-Notifica en tiempo real cuando un usuario esta escribiendo en la sala.
+Notifica en tiempo real cuando un usuario está escribiendo en la sala.

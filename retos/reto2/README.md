@@ -1,7 +1,7 @@
-# Reto 2 - Envio de archivos
+# Reto 2 - Envío de archivos
 
-Codigo:
+Código:
 - servidor: server.js
 - cliente: client.js
 
-Implementa envio de archivos pequenos (max 2MB) y descarga en los clientes conectados.
+Implementa envío de archivos pequeños (máx. 2 MB) y descarga en los clientes conectados.

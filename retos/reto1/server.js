@@ -3,13 +3,20 @@ function buildImageMessage(currentClient, payload) {
   if (
     typeof payload.name !== "string" ||
     typeof payload.mime !== "string" ||
-    typeof payload.data !== "string")
-    {return { ok: false, error: "Imagen no valida" };
-  } if (!payload.mime.startsWith("image/")) {
+    typeof payload.data !== "string"
+  ) {
+    return { ok: false, error: "Imagen no válida" };
+  }
+
+  if (!payload.mime.startsWith("image/")) {
     return { ok: false, error: "El archivo enviado no es una imagen" };
-  }if (payload.data.length > MAX_FILE_SIZE_BYTES * 1.4) {
+  }
+
+  if (payload.data.length > MAX_FILE_SIZE_BYTES * 1.4) {
     return { ok: false, error: "Imagen demasiado grande (max 2MB)" };
-  }return {
+  }
+
+  return {
     ok: true,
     message: {
       type: "image",
