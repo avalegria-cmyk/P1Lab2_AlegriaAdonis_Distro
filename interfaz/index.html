@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboratorio WebSocket - Interfaz Integrada</title>
+    <link rel="stylesheet" href="/interfaz/style.css" />
+</head>
+<body>
+    <main class="layout">
+        <aside class="panel">
+            <h1>Interfaz Integrada</h1>
+            <p class="muted">Conecta todos los retos desde una sola vista.</p>
+
+            <label for="username">Usuario</label>
+            <input id="username" maxlength="24" placeholder="Ej. adonis" />
+            <label for="room">Sala</label>
+            <input id="room" maxlength="24" value="general" />
+            <button id="joinBtn" type="button">Conectar / Cambiar sala</button>
+            <div class="row">
+                <span id="status" class="badge off">Desconectado</span>
+                <span id="usersCount" class="badge">Usuarios: 0</span>
+            </div>
+            <h2>Usuarios</h2>
+            <ul id="usersList"></ul>
+            <h2>Archivo / Imagen</h2>
+            <input id="fileInput" type="file" />
+            <button id="sendFileBtn" type="button">Enviar archivo</button>
+        </aside>
+        <section class="panel chat">
+            <header>
+                <h2>Sala: <span id="roomLabel">general</span></h2>
+                <small id="typingIndicator"></small>
+            </header>
+            <div id="messages" class="messages"></div>
+            <section class="board-wrap">
+                <div class="board-head">
+                    <h3>Pizarra Online Colaborativa</h3>
+                    <button id="clearBoardBtn" type="button">Limpiar pizarra</button>
+                </div>
+                <canvas id="boardCanvas" width="880" height="260"></canvas>
+            </section>
+            <form id="messageForm" class="composer">
+                <textarea id="messageInput" rows="2" maxlength="1000" placeholder="Escribe un mensaje..."></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <script type="module" src="/interfaz/app.js"></script>
+</body>
+
+</html>

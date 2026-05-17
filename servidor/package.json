@@ -1,0 +1,12 @@
+{
+  "name": "laboratorio-websocket-retos",
+  "version": "1.0.0",
+  "description": "Aplicacion distribuida con WebSocket y retos modulares",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
